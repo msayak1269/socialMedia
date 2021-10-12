@@ -19,7 +19,7 @@ app.secret_key = "msaya1269"
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 client = MongoClient(
-    "mongodb+srv://user1:12345@cluster0.fkdie.mongodb.net/socialMediaDataBase?retryWrites=true&w=majority", tlsCAFile=ca)
+    "MONGODB URL", tlsCAFile=ca)
 socialMediaDataBase = client.get_database("socialMediaDataBase")
 
 ### REGISTER ###
